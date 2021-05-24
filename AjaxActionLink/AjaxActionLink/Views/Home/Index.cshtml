@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div id="Loader" style="display: none">
+    <img src="~/Images/805.gif" width="60" height="60" />
+</div>
+
+@Ajax.ActionLink("All Employees", "AllEmployees", "Home",
+    new AjaxOptions()
+    {
+        HttpMethod = "POST",
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "DivUpdate",
+        LoadingElementId = "Loader",
+    }
+    )
+
+<span style="color: red">--</span>
+@Ajax.ActionLink("Top 3 Employees Salaries", "Top3Emp", "Home",
+    new AjaxOptions()
+    {
+        HttpMethod = "POST",
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "DivUpdate",
+        LoadingElementId = "Loader",
+    }
+    )
+<span style="color: red">--</span>
+@Ajax.ActionLink("Buttom 3 Employees Salaries", "Buttom3Emp", "Home",
+    new AjaxOptions()
+    {
+        HttpMethod = "POST",
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "DivUpdate",
+        LoadingElementId = "Loader",
+    }
+    )
+<div id="DivUpdate">
+
+</div>
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>

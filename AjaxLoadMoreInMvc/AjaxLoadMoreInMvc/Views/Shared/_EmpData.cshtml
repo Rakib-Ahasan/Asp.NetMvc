@@ -1,0 +1,70 @@
+﻿@model IEnumerable<AjaxLoadMoreInMvc.Models.Employee>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.salary)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Id)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.gender)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.age)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.salary)
+    </td>
+</tr>
+}
+@{
+    if (Convert.ToInt32(Session["data"])>Model.Count())
+    {
+            
+    }
+    else
+    {
+        <tr>
+            <td colspan="7" align="center">
+                <div id="Loader" style="display: none">
+                    <img src="~/Images/805.gif" width="50" height="50"/>
+                </div>
+                @Ajax.ActionLink("Load More Data", $"Index", "Home",
+                    ajaxOptions: new AjaxOptions()
+                    {
+                        HttpMethod = "POST",
+                        InsertionMode = InsertionMode.Replace,
+                        UpdateTargetId = "DivUpdate",
+                        LoadingElementId = "Loader"
+                    },
+                    htmlAttributes: new {@class = "btn btn-info"}
+                    )
+            </td>
+        </tr>
+
+    }
+}
+
+</table>

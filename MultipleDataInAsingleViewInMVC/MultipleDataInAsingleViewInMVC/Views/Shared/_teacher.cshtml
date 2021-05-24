@@ -1,0 +1,27 @@
+﻿@using MultipleDataInAsingleViewInMVC.Models
+@model IEnumerable<MultipleDataInAsingleViewInMVC.Models.Teacher>
+<h1>TEACHERS DATA</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Designation</th>
+            <th>Salary</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.name</td>
+                <td>@item.gender</td>
+                <td>@item.qualification</td>
+                <td>@item.salary</td>
+            </tr>
+        }
+    </tbody>
+</table>

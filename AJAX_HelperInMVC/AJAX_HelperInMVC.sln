@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AJAX_HelperInMVC", "AJAX_HelperInMVC\AJAX_HelperInMVC.csproj", "{A2722620-6431-4551-8861-DC1ACCF88C55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2722620-6431-4551-8861-DC1ACCF88C55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2722620-6431-4551-8861-DC1ACCF88C55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2722620-6431-4551-8861-DC1ACCF88C55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2722620-6431-4551-8861-DC1ACCF88C55}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9EF09BF6-A99A-4C63-83D3-93FE0D77852F}
+	EndGlobalSection
+EndGlobal

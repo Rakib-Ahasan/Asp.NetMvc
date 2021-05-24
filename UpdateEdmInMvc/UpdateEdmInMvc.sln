@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdateEdmInMvc", "UpdateEdmInMvc\UpdateEdmInMvc.csproj", "{CEFDA2A5-B07D-4A05-A1C0-F340483EF6FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEFDA2A5-B07D-4A05-A1C0-F340483EF6FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEFDA2A5-B07D-4A05-A1C0-F340483EF6FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEFDA2A5-B07D-4A05-A1C0-F340483EF6FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEFDA2A5-B07D-4A05-A1C0-F340483EF6FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {637AF196-157D-4B43-9023-5A26E1A58941}
+	EndGlobalSection
+EndGlobal

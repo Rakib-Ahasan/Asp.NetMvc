@@ -1,0 +1,34 @@
+﻿@using System.ComponentModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<!--Use html raw code for a text box in page-->
+<input type="text" name="fullname" value="" />
+
+<!--Use Html helper method for text box-->
+<br />
+<br />
+@Html.TextBox("fullname")
+<br />
+<br />
+@Html.TextBox("fullname", "Rakib Ahasan")
+<!--use inline css style in as a html attributes which names style and title-->
+<br />
+<br />
+@Html.TextBox("fullname", "Rakib", new { style = "background:lightgreen;color:red;font-weight:bold", title = "Please enter your fullname" })
+
+<!--use css class from external which comes from Site.css file-->
+<br />
+<br />
+@Html.TextBox("fullname", "Rakib", new { @class = "TextBoxStyle" })
+
+<!--Use bootstrap class and Csharp class-->
+<br />
+<br />
+@Html.TextBox("fullname", "Sagor", new { @class = "form-control", @readonly=true})
+
+
+

@@ -1,0 +1,60 @@
+﻿@model CrudApplication.Models.Employee
+
+<div>
+    <h4>Employee</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployeeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployeeName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployeeAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployeeAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployeeContact)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployeeContact)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployeeDateOfBirth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployeeDateOfBirth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployeePayableAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployeePayableAmount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployeeOrganization)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployeeOrganization)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EmployeeId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
